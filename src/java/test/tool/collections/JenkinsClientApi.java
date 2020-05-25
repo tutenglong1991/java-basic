@@ -19,7 +19,6 @@ public class JenkinsClientApi {
             try
             {
                 Map<String, Job> Jobs = jenkinsServer.getJobs();
-                // 指定项目
                 jenkinsServer.getJob("hml_jenkins_test").build();
                 System.out.println(Jobs);
             }

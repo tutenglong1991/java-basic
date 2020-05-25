@@ -19,20 +19,20 @@ public class ClassExtends{
 class UseCase2 extends ClassExtends{
     int age;
     public UseCase2(String name, int age) {
-        super(name); // ¹¹Ôì·½·¨ÖĞµ÷ÓÃÁíÒ»¸ö¹¹Ôì·½·¨£¬µ÷ÓÃ¶¯×÷±ØĞëÖÃÓÚ×îÆğÊ¼Î»ÖÃ£»
+        super(name); // æ„é€ æ–¹æ³•ä¸­è°ƒç”¨å¦ä¸€ä¸ªæ„é€ æ–¹æ³•ï¼Œè°ƒç”¨åŠ¨ä½œå¿…é¡»ç½®äºæœ€èµ·å§‹ä½ç½®ï¼›
         this.age = age;
     }
 
-//	public void test_call_constructor() { // ²»ÄÜÔÙ¹¹Ôì·½·¨ÒÔÍâµÄµØ·½µ÷ÓÃ¹¹Ôì·½·¨
+//	public void test_call_constructor() { // ä¸èƒ½å†æ„é€ æ–¹æ³•ä»¥å¤–çš„åœ°æ–¹è°ƒç”¨æ„é€ æ–¹æ³•
 //		super();
 //	}
 
     public void say() {
-        System.out.println("ÎÒµÄÃû×ÖÊÇ£º" + name + ",½ñÄêÒÑ¾­" + age + "ËêÁË¡£");
+        System.out.println("æˆ‘çš„åå­—æ˜¯ï¼š" + name + ",ä»Šå¹´å·²ç»" + age + "å²äº†ã€‚");
     }
 
     public static void main(String[] args) {
-        UseCase2 u = new UseCase2("»¨»¨", 28);
+        UseCase2 u = new UseCase2("èŠ±èŠ±", 28);
         u.say();
     }
 }
