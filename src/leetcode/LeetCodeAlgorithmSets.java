@@ -15,7 +15,7 @@ public class  LeetCodeAlgorithmSets{
     //数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字；
     //分析题目：题目中存在一个陷阱就是这样的元素一定是只存在一个，因为如果存在两个或以上的话一定不可能都超过长度的一半，只能是等于
     //再一个需要考虑为空或只有一个数组的情况；
-    public static String findNumGreaterThanListLengthUseDoubleFor(int[] myList) {
+   public static String findNumGreaterThanListLengthUseDoubleFor(int[] myList) {
         int targetNum = 0;
         if(myList.length == 0) {
             return "数组不能为空";
