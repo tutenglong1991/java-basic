@@ -13,7 +13,6 @@ public class  LeetCodeAlgorithmSets{
 //        System.out.println(LeetCodeAlgorithmSets.findNumGreaterThanListLengthUseDoubleFor(list));
         System.out.println(LeetCodeAlgorithmSets.insertSort(list));
         int[] alist = new int[]{4,57,87,3,5,68,9,4,5,5,54,68,21};
-        System.out.println(LeetCodeAlgorithmSets.getIndexOfvalue(alist, 87));
     }
     //数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字；
     //分析题目：题目中存在一个陷阱就是这样的元素一定是只存在一个，因为如果存在两个或以上的话一定不可能都超过长度的一半，只能是等于
@@ -69,14 +68,5 @@ public class  LeetCodeAlgorithmSets{
             A.add(i);
         }
         return A;
-    }
-
-    public static Object getIndexOfvalue (int[] array, int value) {
-        for(int i=0; i<array.length; i++) {
-            if(array[i] == value) {
-                return i;
-            }
-        }
-        return null;
     }
 }
