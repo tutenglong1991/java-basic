@@ -2,18 +2,9 @@ package leetcode;
 
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class  LeetCodeAlgorithmSets{
-
-    public static void main(String[] args) {
-//        int[] list = new int[]{1,1,4,1,2,1,6,1,2,1};
-//        int[] list = new int[]{4,2,6,2,1,1,1,1,1,1};
-//        int[] list = new int[]{};
-        int[] list = new int[]{5,2,4,6,1,3,8,7,10,9};
-//        System.out.println(LeetCodeAlgorithmSets.findNumGreaterThanListLengthUseDoubleFor(list));
-        System.out.println(LeetCodeAlgorithmSets.insertSort(list));
-        int[] alist = new int[]{4,57,87,3,5,68,9,4,5,5,54,68,21};
-    }
     //数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字；
     //分析题目：题目中存在一个陷阱就是这样的元素一定是只存在一个，因为如果存在两个或以上的话一定不可能都超过长度的一半，只能是等于
     //再一个需要考虑为空或只有一个数组的情况；
@@ -53,9 +44,9 @@ public class  LeetCodeAlgorithmSets{
             // 将抓取的牌与手中的牌逐个比较，若存在比抽取的牌大的，则替换位置
             // 调换位置，升序排列，大的往后挪
             //while(i >= 0 && myList[i] > key) {
-            // 调换位置，降序排列，小的的往后挪
+            // 调换位置，降序排列，小的往后挪
             while(i >= 0 && myList[i] < key) {
-                // 调换位置，升序排列，大的往后挪
+                // 调换位置，降序排列，小的往后挪
                 myList[i+1] = myList[i];
                 // 需要比较的次数随着每次比较后减少一次
                 i = i - 1;
@@ -68,5 +59,22 @@ public class  LeetCodeAlgorithmSets{
             A.add(i);
         }
         return A;
+    }
+
+    public List<List<String>> groupAnagrams (String[] args) {
+        List<String> sublist = new ArrayList<>();
+        List<List<String>> finalList = new ArrayList<>();
+        return finalList;
+    }
+
+    public static void main(String[] args) {
+//        int[] list = new int[]{1,1,4,1,2,1,6,1,2,1};
+//        int[] list = new int[]{4,2,6,2,1,1,1,1,1,1};
+//        int[] list = new int[]{};
+        int[] list = new int[]{5,2,4,6,1,3,8,7,10,9};
+//        System.out.println(LeetCodeAlgorithmSets.findNumGreaterThanListLengthUseDoubleFor(list));
+//        System.out.println(LeetCodeAlgorithmSets.insertSort(list));
+//        int[] alist = new int[]{4,57,87,3,5,68,9,4,5,5,54,68,21};
+        System.out.println(LeetCodeAlgorithmSets.insertSort(list));
     }
 }
